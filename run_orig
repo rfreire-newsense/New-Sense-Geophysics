@@ -1,0 +1,14 @@
+source ~/venv/bin/activate
+#python dataLogger_profile.py  
+python dataLogger_profile.py  &
+
+PYTHON_PID=$!
+
+
+sleep 2
+
+
+sudo renice -n -20 -p $PYTHON_PID
+
+echo "Python application running with PID: $PYTHON_PID and reniced to priority -20"
+

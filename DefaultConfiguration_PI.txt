@@ -1,0 +1,454 @@
+
+[CONFIG_PI]
+        maxpacketcount=1000
+        logdirectory=//home//nsg//Desktop//NSG//
+		logfile_name=DataLogger_IDAS
+		
+		#time in seconds write all data to file data
+		file_write_time=10
+		
+		#time in seconds auto stop profile viewer, 0 is disable
+		profile_viewer_time=0
+		
+		instrument_timestamp_enable = false
+		
+		#supported instruments: GPS, KMAG4, KANA8, LASER, QTFM_V1, QTFM_V2, DAQHAT, RA4500, ADHAT
+		instrument_amount=4
+		
+		instrument_1=GPS
+		gpio_led_pin_1=16
+		
+		instrument_2=QTFM_V2
+		gpio_led_pin_2=18
+				
+		instrument_3=LASER
+		gpio_led_pin_4=36
+		
+		instrument_4=ADHAT
+		gpio_led_pin_3=7
+
+		instrument_5=RA4500
+		# no gpio_led_pin
+		gpio_led_pin_5=0
+		
+		# DAQHAT Raspberry Pi GPIO pins used
+      		# Pins: 19, 21, 23, 24 (SPI interface)
+		# Pins: 27, 28 (ID EEPROM)
+        	# Pins: 32, 33, 37 (Board address)
+
+###########################################
+### Data Output Configuration 
+### Support only next config: 
+### 1. Instrument KMAG4 mag a,b,c,d
+### 2. Binary file format
+### 3. 4 bytes per data value
+### 4. Sample one Per Second 
+### 5. Size of each file 1024 bytes (compress each file to bz2) 
+### File name include timestamp,station name,mag channel (e.g.  2022-08-31T22-08-43UTC.base5200.mag_a.bin.bz2)
+###########################################		
+[DATA_OUTPUT]
+    
+	# true/false - disable / enable data output 
+	disabled=true
+	
+	outputfile=.base5200.mag_a.bin
+	
+	kmag4_channel=mag_a
+
+	
+
+###########################################
+###	INSTRUMENT SETUPS FOLLOW	####
+###########################################
+
+
+[INSTRUMENT_GPS]
+	label=gps
+	parser=PARSER_GPS
+	port=USB 
+	baudrate=115200
+	# instrument speed in hz (e.g. 50) , 0 is Ignore
+	speed_hz = 0
+	rawdata_log_disabled=true
+	disabled=false
+	
+[INSTRUMENT_KMAG4]
+	label=kmag4
+	parser=PARSER_KMAG4
+	port=COM5 
+	baudrate=115200
+	# instrument speed in Hz (e.g. 50) , 0 is Ignore
+	speed_Hz = 0
+	rawdata_log_disabled=true
+	disabled=true
+	
+[INSTRUMENT_DAQHAT]
+	label=daqhat
+	parser=PARSER_DAQHAT
+	port=/dev/i2c
+	# no baudrate
+	baudrate=0
+	# instrument speed in Hz (e.g. 50) , 0 is Ignore
+	speed_Hz = 0
+	# Supported mode SE (Single Ended), DIFF (Differential)
+	input_mode=SE
+	# default scan_rate 50 Hz
+	scan_rate = 50
+	rawdata_log_disabled=true
+	disabled=true
+
+[INSTRUMENT_LASER]
+	label=laser
+	parser=PARSER_LASER
+	port=USB 
+	baudrate=9600
+	# instrument speed in Hz (e.g. 50) , 0 is Ignore
+	speed_Hz = 0
+	rawdata_log_disabled=true
+	disabled=false
+
+[INSTRUMENT_QTFM_V1]
+	label=qtfm_V1
+	parser=PARSER_QTFM_V1
+	port=USB
+	baudrate=115200
+	# instrument speed in Hz (e.g. 50) , 0 is Ignore
+	speed_Hz = 50
+	rawdata_log_disabled=true
+	disabled=true
+
+[INSTRUMENT_QTFM_V2]
+	label=qtfm_V2
+	parser=PARSER_QTFM_V2
+	port=USB 
+	baudrate=115200
+	# instrument speed in Hz (e.g. 50) , 0 is Ignore
+	speed_Hz = 62.5
+	rawdata_log_disabled=true
+	disabled=false
+
+	
+[INSTRUMENT_KANA8]
+	label=kana8
+	parser=PARSER_KANA8
+	port=USB 
+	baudrate=115200
+	# instrument speed in Hz (e.g. 50) , 0 is Ignore
+	speed_Hz = 0
+	rawdata_log_disabled=true
+	disabled=true
+	
+[INSTRUMENT_RA4500]
+	label=ra4500
+	parser=PARSER_RA4500
+	port=USB 
+	#baudrate=56000
+	baudrate=57600
+	# instrument speed in hz (e.g. 50) , 0 is Ignore
+	speed_hz = 0
+	rawdata_log_disabled=true
+	disabled=true
+
+[INSTRUMENT_ADHAT]
+    label=adhat
+    parser=PARSER_ADHAT
+    port=/dev/i2c
+    # Channels Configuration. Support 5 channels
+    #Multiplier, divider and offset value for (Multiplier*Value/Divider + Offset) operations
+    # Modify according to actual voltage
+    # external AVDD and AVSS(Default), or internal 2.5V
+
+    # Channel 1
+    channel_1_active = true
+    ch_1_multiplier = 5.08
+    ch_1_divider = 0x7fffffff
+    ch_1_offset = 0.00
+
+    # Channel 2
+    channel_2_active = false
+    ch_2_multiplier = 5.08
+    ch_2_divider = 0x7fffffff
+    ch_2_offset = 0.00
+
+    # Channel 3
+    channel_3_active = false
+    ch_3_multiplier = 5.08
+    ch_3_divider = 0x7fffffff
+    ch_3_offset = 0.00
+
+    # Channel 4
+    channel_4_active = false
+    ch_4_multiplier = 5.08
+    ch_4_divider = 0x7fffffff
+    ch_4_offset = 0.00
+
+    # Channel 5
+    channel_5_active = false
+    ch_5_multiplier = 5.08
+    ch_5_divider = 0x7fffffff
+    ch_5_offset = 0.00
+
+    # no baudrate
+    baudrate=0
+    # instrument speed in Hz (e.g. 50) , 0 is Ignore
+    speed_Hz = 0
+    # default scan_rate 50 Hz
+    scan_rate = 50
+    rawdata_log_disabled=true
+    disabled=false
+
+[PARSER_KANA8]
+	type=delimited
+	label=kana8_default
+
+	packetheader=$KANA8									
+	packettail= **cr**
+
+	element_01=string, id
+
+	element_02=int,	sequence
+	element_03=int,	gps_tic
+	element_04=int,	utc_offset
+	element_05=int,	channel_1
+	element_06=int,	channel_2
+	element_07=int,	channel_3
+	element_08=int,	channel_4
+	element_09=int,	channel_5
+	element_10=int,	channel_6
+	element_11=int,	channel_7
+	element_12=int,	channel_8
+
+
+[PARSER_KMAG4]
+	type=delimited
+	label=kmag4_default
+
+	packetheader=$KMAG4									
+	packettail= **cr**
+
+	element_01=string, id
+
+	element_02=int,	internal_counter
+	element_03=int,	gps_sync_time
+	element_04=int,	gps_index
+	element_05=floatkroum,	mag_a
+	element_06=floatkroum,	mag_b
+	element_07=floatkroum,	mag_c
+	element_08=floatkroum,	mag_d
+
+
+
+[PARSER_LASER]
+	#sample line: 3.89m,12.60%[cr][lf]
+	type=delimited
+	label=laser
+	packetheader=m,
+	packettail= **crlf**
+#	delimiter=2, 0x6d, 0x2c
+
+	element_01=float, height_m
+	element_02=string, percent
+
+[PARSER_RA4500]
+	#sample line: '\x10\xDF\x03'
+	type=delimited
+	label=ra4500
+	packetheader='\x10\xDF\x03'
+	packettail= **crlf**
+
+[PARSER_ADHAT]
+	#sample line: '2.1679344764016264'
+	type=delimited
+	label=adhat
+	packetheader=none
+	packettail=none
+
+
+[PARSER_QTFM_V1]
+	#sample line: !magdata@signalstrength^cyclecounter\r\n
+	label=qtfm_V1
+	packetheader=!
+	packettail= **crlf**
+
+	element_01=float, magdata
+	element_02=float, signalstrength
+	element_03=float, cyclecounter
+
+[PARSER_QTFM_V2]
+	#sample line: !49472.970_X-26210.880=>641879s121v060\r\n
+	label=qtfm_V2
+	packetheader=!
+	packettail= **crlf**
+
+	element_01=float, magdata
+	element_02=float, signalstrength
+	element_03=float, cyclecounter
+
+
+
+[PARSER_GPS]
+	type=GPS
+	label=GPS
+	packetheader=$G
+	subparser_01=$GNGGA, GGA, GGA
+	subparser_02=$GNGLL, GLL, GLL
+	subparser_03=$GNGSA, GSA, GSA
+	subparser_04=$GNGSV, GSV, GSV
+	subparser_05=$GNMSS, MSS, MSS
+	subparser_06=$GNRMC, RMC, RMC
+	subparser_07=$GNVTG, VTG, VTG
+	subparser_08=$GNZDA, ZDA, ZDA
+
+
+#GGA -- Time, position and fix type data
+[PARSER_GGA]			
+	type=delimited
+	label=GGA
+
+	element_01=string, id
+	element_02=utc, utctime
+	element_03=lat, latitude
+	element_04=string, ns_indicator
+	element_05=long, longitude
+	element_06=string, ew_indicator
+	element_07=int, position_fix_indicator
+	element_08=int, sats_in_use
+	element_09=float, HDOP
+	element_11=float, msl_altitude
+	element_12=string, msl_units
+	element_13=string, geoid
+	element_14=string, geoid_unit
+	element_15=string, age_of_diff
+	element_16=string, diff_ref_id
+
+
+
+[PARSER_GLL]
+#GLL -- Latitude, longitude, UTC time of position fix and status			
+	type=delimited
+	label=GLL
+
+	element_01=string, id
+	element_02=lat, latitude
+	element_03=string, ns_indicator
+	element_04=long, longitude
+	element_05=string, ew_indicator
+	element_06=utc, utctime
+	element_07=string, status
+
+[PARSER_GSA]			
+#GSA -- GPS receiver operating mode, satellites used in the position solution and DOP values
+	type=delimited
+	label=GSA
+
+	element_01=string, id
+	element_02=string,mode1
+	element_03=int, mode2
+	element_04=int, sv_chan_1
+	element_05=int, sv_chan_2
+	element_06=int, sv_chan_3
+	element_07=int, sv_chan_4
+	element_08=int, sv_chan_5
+	element_09=int, sv_chan_6
+	element_10=int, sv_chan_7
+	element_11=int, sv_chan_8
+	element_12=int, sv_chan_9
+	element_13=int, sv_chan_10
+	element_14=int, sv_chan_11
+	element_15=int, sv_chan_12
+	element_16=float, pdop
+	element_17=float, hdop
+	element_18=float, vdop
+
+
+[PARSER_GSV]			
+#GSV -- The number of GPS satellites in view, satellite ID numbers, elevation, azimuth, and SNR values
+	type=delimited
+	label=GSV
+
+	element_01=string, id
+	element_02=int, number_of_messages
+	element_03=int, message_number
+	#note "in view" is not the same as "in use"; see GGA:sats_in_use
+	element_04=int, sats_in_view			
+
+	element_05=int, elevation
+	element_06=int, azimuth
+	element_07=int, SNR
+
+
+[PARSER_RMC]			
+#RMC -- Time, date, position, course and speed data
+	type=delimited
+	label=RMC
+
+	element_01=string, id
+	element_02=utc, utctime
+	element_03=string, status
+	element_04=lat, latitude
+	element_05=string, nsindicator
+	element_06=long, longitude
+	element_07=string, ewindicator
+	element_08=float, speed
+	element_09=float, course
+	element_10=string, mode
+
+
+[PARSER_VTG]			
+#VTG -- Course and speed information relative to the ground
+	type=delimited
+	label=VTG
+
+	element_01=string, id
+	#course in degrees
+	element_02=float,	course_true	
+	#Reference - T	
+	element_03=string, course_t_ref
+	#measured heading	
+	element_04=float,	course_magnetic
+	#Reference - M
+	element_05=string, course_m_ref		
+	element_06=float,	speed_knots			#Measured speed Knots
+	element_07=string, speed_r_knots		#Units N
+	element_08=float,	speed_metric		#Meaured speed metric
+	element_09=string, speed_r_metric		#Units K
+	element_10=string, mode				#flag, A or D or DR
+
+
+
+
+[PARSER_ZDA]			
+#ZDA -- PPS timing message (synchronized to PPS)
+	type=delimited
+	label=ZDA
+
+	element_01=string, id
+	element_02=utc, utctime
+	element_03=int, utcday
+	element_04=int, utcmonth
+	element_05=int, utcyear
+	element_06=int, zonemins
+
+[PARSER_DAQHAT]
+	type=delimited
+	label=daqhat_default
+
+	packetheader=none
+	packettail=none
+
+	element_01=string, id
+
+	element_02=int,	sequence
+	element_03=int,	gps_tic
+	element_04=int,	utc_offset
+	element_05=int,	channel_1
+	element_06=int,	channel_2
+	element_07=int,	channel_3
+	element_08=int,	channel_4
+	element_09=int,	channel_5
+	element_10=int,	channel_6
+	element_11=int,	channel_7
+	element_12=int,	channel_8
+
+
+
