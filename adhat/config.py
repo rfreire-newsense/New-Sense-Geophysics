@@ -136,7 +136,10 @@ class JetsonNano:
 hostname = os.popen("uname -n").read().strip()
         
 #if os.path.exists('/sys/bus/platform/drivers/gpiomem-bcm2835'):
-if hostname == "raspberrypi":
+def is_raspberry_pi():
+    return os.path.exists("/sys/bus/platform/drivers/gpiomem-bcm2835")
+
+if is_raspberry_pi():
     implementation = RaspberryPi()
 else:
     implementation = JetsonNano()
