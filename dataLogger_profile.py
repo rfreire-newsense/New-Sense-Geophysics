@@ -191,7 +191,8 @@ if platform == "linux" or platform == "linux2":
     Raspberry_PI = True
     config_PI_file = "DefaultConfiguration_PI.txt"
 
-    Logdirectory = "//home//nsg//Desktop/NSG//"
+    home_dir = os.path.expanduser("~")
+    Logdirectory = os.path.join(home_dir, "Desktop", "NSG")
 
 elif platform == "win32":
     Raspberry_PI = False
