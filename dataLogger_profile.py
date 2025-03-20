@@ -201,7 +201,7 @@ elif platform == "win32":
 if Raspberry_PI:
     import RPi.GPIO as GPIO  # Import Raspberry Pi GPIO library
 
-    Logdirectory = ""
+    #Logdirectory = ""
 
 dataCounter = 0
 lastLaserHeight = "999999"
