@@ -7,8 +7,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1908</width>
-    <height>953</height>
+    <width>1912</width>
+    <height>1081</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -811,7 +811,7 @@ color: rgb(255, 255, 255);</string>
       <x>1575</x>
       <y>783</y>
       <width>339</width>
-      <height>151</height>
+      <height>297</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -985,7 +985,7 @@ color: rgb(255, 255, 255);</string>
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="135">
+            <color alpha="255">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -1030,7 +1030,7 @@ color: rgb(255, 255, 255);</string>
                  background-color: black;
                  border: none;
                  color: white;
-                 font: 700 12pt \&quot;Segoe UI\&quot;;
+                 font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
              QPushButton:hover {
@@ -1219,7 +1219,7 @@ View</string>
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="135">
+            <color alpha="255">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -1261,7 +1261,7 @@ View</string>
                  background-color: black;
                  border: none;
                  color: white;
-                 font: 700 12pt \&quot;Segoe UI\&quot;;
+                 font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
              QPushButton:hover {
@@ -1284,7 +1284,7 @@ View</string>
       <x>0</x>
       <y>783</y>
       <width>406</width>
-      <height>141</height>
+      <height>299</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -1458,7 +1458,7 @@ View</string>
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="135">
+            <color alpha="255">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -1500,7 +1500,7 @@ View</string>
                  background-color: black;
                  border: none;
                  color: white;
-                 font: 700 12pt \&quot;Segoe UI\&quot;;
+                 font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
              QPushButton:hover {
@@ -1689,7 +1689,7 @@ Profile</string>
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="135">
+            <color alpha="255">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -1731,7 +1731,7 @@ Profile</string>
                  background-color: black;
                  border: none;
                  color: white;
-                 font: 700 12pt \&quot;Segoe UI\&quot;;
+                 font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
              QPushButton:hover {
@@ -1929,7 +1929,7 @@ Profile</string>
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="135">
+            <color alpha="255">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -2020,8 +2020,8 @@ Scale 10</string>
    <widget class="QWidget" name="verticalLayoutWidget_23">
     <property name="geometry">
      <rect>
-      <x>820</x>
-      <y>790</y>
+      <x>1230</x>
+      <y>940</y>
       <width>339</width>
       <height>141</height>
      </rect>
