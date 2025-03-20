@@ -9,6 +9,7 @@ import re
 import struct
 import sys
 import time
+import configparser
 from time import sleep
 from enum import Enum
 from sys import platform
@@ -790,6 +791,9 @@ class DataLogger_Profile(QMainWindow):
 
         # Get Logdirectory
         config_PI = config_object_PI["CONFIG_PI"]
+        raw_log_dir = config_PI["logdirectory"]
+
+        Logdirectory = os.path.expandvars(raw_log_dir)
 
         current_time = datetime.datetime.now()
 
