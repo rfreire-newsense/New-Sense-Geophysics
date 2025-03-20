@@ -1,7 +1,7 @@
 
 [CONFIG_PI]
         maxpacketcount=1000
-        logdirectory=//home//nsg//Desktop//NSG//
+        logdirectory=${HOME}/Desktop/NSG
 		logfile_name=DataLogger_IDAS
 		
 		#time in seconds write all data to file data
