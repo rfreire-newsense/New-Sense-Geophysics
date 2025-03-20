@@ -1499,7 +1499,7 @@ View</string>
         <string notr="true">             QPushButton {
                  background-color: black;
                  border: none;
-                 color: white;
+                 color: black;
                  font: 700 12pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
@@ -1730,7 +1730,7 @@ Profile</string>
         <string notr="true">             QPushButton {
                  background-color: black;
                  border: none;
-                 color: white;
+                 color: black;
                  font: 700 12pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
