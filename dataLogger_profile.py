@@ -798,7 +798,7 @@ class DataLogger_Profile(QMainWindow):
         current_time = datetime.datetime.now()
 
         if platform != "win32":
-            Logdirectory = config_PI["logdirectory"].strip()
+            #Logdirectory = config_PI["logdirectory"].strip()
 
             if not os.path.isdir(Logdirectory):
                 os.mkdir(Logdirectory)
