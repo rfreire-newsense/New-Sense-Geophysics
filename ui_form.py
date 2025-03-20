@@ -23,7 +23,7 @@ class Ui_DataLogger_Profile(object):
     def setupUi(self, DataLogger_Profile):
         if not DataLogger_Profile.objectName():
             DataLogger_Profile.setObjectName(u"DataLogger_Profile")
-        DataLogger_Profile.resize(792, 441)
+        DataLogger_Profile.resize(793, 409)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
