@@ -137,7 +137,12 @@ hostname = os.popen("uname -n").read().strip()
         
 #if os.path.exists('/sys/bus/platform/drivers/gpiomem-bcm2835'):
 def is_raspberry_pi():
-    return os.path.exists("/sys/bus/platform/drivers/gpiomem-bcm2835")
+    try:
+        with open("/proc/device-tree/model", "r") as f:
+            model = f.read().lower()
+        return "raspberry pi" in model
+    except Exception:
+        return False
 
 if is_raspberry_pi():
     implementation = RaspberryPi()
