@@ -9,7 +9,6 @@ import re
 import struct
 import sys
 import time
-import configparser
 from time import sleep
 from enum import Enum
 from sys import platform
