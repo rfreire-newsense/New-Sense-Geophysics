@@ -23,7 +23,7 @@ class Ui_DataLogger_Profile(object):
     def setupUi(self, DataLogger_Profile):
         if not DataLogger_Profile.objectName():
             DataLogger_Profile.setObjectName(u"DataLogger_Profile")
-        DataLogger_Profile.resize(1908, 953)
+        DataLogger_Profile.resize(601, 332)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -35,7 +35,7 @@ class Ui_DataLogger_Profile(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.horizontalLayoutWidget_2 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_2.setObjectName(u"horizontalLayoutWidget_2")
-        self.horizontalLayoutWidget_2.setGeometry(QRect(0, 0, 1921, 780))
+        self.horizontalLayoutWidget_2.setGeometry(QRect(0, 0, 591, 201))
         self.horizontalLayout_Tab = QHBoxLayout(self.horizontalLayoutWidget_2)
         self.horizontalLayout_Tab.setObjectName(u"horizontalLayout_Tab")
         self.horizontalLayout_Tab.setContentsMargins(0, 0, 0, 0)
@@ -47,20 +47,20 @@ class Ui_DataLogger_Profile(object):
         self.tab_ProfileMag.setObjectName(u"tab_ProfileMag")
         self.verticalLayoutWidget_4 = QWidget(self.tab_ProfileMag)
         self.verticalLayoutWidget_4.setObjectName(u"verticalLayoutWidget_4")
-        self.verticalLayoutWidget_4.setGeometry(QRect(0, 0, 201, 80))
+        self.verticalLayoutWidget_4.setGeometry(QRect(0, 0, 131, 41))
         self.verticalLayout_MaxMag = QHBoxLayout(self.verticalLayoutWidget_4)
         self.verticalLayout_MaxMag.setObjectName(u"verticalLayout_MaxMag")
         self.verticalLayout_MaxMag.setContentsMargins(0, 0, 0, 0)
         self.label_MaxMag = QLabel(self.verticalLayoutWidget_4)
         self.label_MaxMag.setObjectName(u"label_MaxMag")
-        self.label_MaxMag.setStyleSheet(u"font: 700 18pt \"Segoe UI\";\n"
+        self.label_MaxMag.setStyleSheet(u"font: 700 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);")
 
         self.verticalLayout_MaxMag.addWidget(self.label_MaxMag)
 
         self.lcdNumber_MaxMag = QLCDNumber(self.verticalLayoutWidget_4)
         self.lcdNumber_MaxMag.setObjectName(u"lcdNumber_MaxMag")
-        self.lcdNumber_MaxMag.setStyleSheet(u"font: 700 16pt \"Segoe UI\";\n"
+        self.lcdNumber_MaxMag.setStyleSheet(u"font: 700 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);")
         self.lcdNumber_MaxMag.setDigitCount(6)
 
@@ -68,20 +68,20 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_7 = QWidget(self.tab_ProfileMag)
         self.verticalLayoutWidget_7.setObjectName(u"verticalLayoutWidget_7")
-        self.verticalLayoutWidget_7.setGeometry(QRect(10, 240, 191, 101))
+        self.verticalLayoutWidget_7.setGeometry(QRect(0, 60, 131, 41))
         self.verticalLayout_CurrentMag = QHBoxLayout(self.verticalLayoutWidget_7)
         self.verticalLayout_CurrentMag.setObjectName(u"verticalLayout_CurrentMag")
         self.verticalLayout_CurrentMag.setContentsMargins(0, 0, 0, 0)
         self.label_CurrentMag = QLabel(self.verticalLayoutWidget_7)
         self.label_CurrentMag.setObjectName(u"label_CurrentMag")
-        self.label_CurrentMag.setStyleSheet(u"font: 700 18pt \"Segoe UI\";\n"
+        self.label_CurrentMag.setStyleSheet(u"font: 700 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);")
 
         self.verticalLayout_CurrentMag.addWidget(self.label_CurrentMag)
 
         self.lcdNumber_CurrentMag = QLCDNumber(self.verticalLayoutWidget_7)
         self.lcdNumber_CurrentMag.setObjectName(u"lcdNumber_CurrentMag")
-        self.lcdNumber_CurrentMag.setStyleSheet(u"font: 700 16pt \"Segoe UI\";\n"
+        self.lcdNumber_CurrentMag.setStyleSheet(u"font: 700 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);")
         self.lcdNumber_CurrentMag.setDigitCount(6)
 
@@ -89,20 +89,20 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_6 = QWidget(self.tab_ProfileMag)
         self.verticalLayoutWidget_6.setObjectName(u"verticalLayoutWidget_6")
-        self.verticalLayoutWidget_6.setGeometry(QRect(0, 550, 201, 80))
+        self.verticalLayoutWidget_6.setGeometry(QRect(0, 120, 131, 41))
         self.verticalLayout_MinMag = QHBoxLayout(self.verticalLayoutWidget_6)
         self.verticalLayout_MinMag.setObjectName(u"verticalLayout_MinMag")
         self.verticalLayout_MinMag.setContentsMargins(0, 0, 0, 0)
         self.label_MinMag = QLabel(self.verticalLayoutWidget_6)
         self.label_MinMag.setObjectName(u"label_MinMag")
-        self.label_MinMag.setStyleSheet(u"font: 700 18pt \"Segoe UI\";\n"
+        self.label_MinMag.setStyleSheet(u"font: 700 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);")
 
         self.verticalLayout_MinMag.addWidget(self.label_MinMag)
 
         self.lcdNumber_MinMag = QLCDNumber(self.verticalLayoutWidget_6)
         self.lcdNumber_MinMag.setObjectName(u"lcdNumber_MinMag")
-        self.lcdNumber_MinMag.setStyleSheet(u"font: 700 16pt \"Segoe UI\";\n"
+        self.lcdNumber_MinMag.setStyleSheet(u"font: 700 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);")
         self.lcdNumber_MinMag.setDigitCount(6)
 
@@ -110,7 +110,7 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayoutWidget_12 = QWidget(self.tab_ProfileMag)
         self.horizontalLayoutWidget_12.setObjectName(u"horizontalLayoutWidget_12")
-        self.horizontalLayoutWidget_12.setGeometry(QRect(200, 0, 1711, 731))
+        self.horizontalLayoutWidget_12.setGeometry(QRect(140, 0, 431, 161))
         self.horizontalLayout_ProfileMag = QHBoxLayout(self.horizontalLayoutWidget_12)
         self.horizontalLayout_ProfileMag.setObjectName(u"horizontalLayout_ProfileMag")
         self.horizontalLayout_ProfileMag.setContentsMargins(0, 0, 0, 0)
@@ -484,7 +484,7 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayoutWidget_7 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_7.setObjectName(u"horizontalLayoutWidget_7")
-        self.horizontalLayoutWidget_7.setGeometry(QRect(1575, 783, 339, 151))
+        self.horizontalLayoutWidget_7.setGeometry(QRect(440, 210, 151, 111))
         self.verticalLayout_7 = QVBoxLayout(self.horizontalLayoutWidget_7)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
         self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -537,8 +537,8 @@ class Ui_DataLogger_Profile(object):
         self.pushButton_ProfileView.setStyleSheet(u"             QPushButton {\n"
 "                 background-color: black;\n"
 "                 border: none;\n"
-"                 color: white;\n"
-"                 font: 700 12pt \\\"Segoe UI\\\";\n"
+"                 color: black;\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
 "                 border-image: url(buttons_grey.png);\n"
 "             }\n"
 "             QPushButton:hover {\n"
@@ -593,8 +593,8 @@ class Ui_DataLogger_Profile(object):
         self.pushButton_Exit.setStyleSheet(u"             QPushButton {\n"
 "                 background-color: black;\n"
 "                 border: none;\n"
-"                 color: white;\n"
-"                 font: 700 12pt \\\"Segoe UI\\\";\n"
+"                 color: black;\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
 "                 border-image: url(buttons_grey.png);\n"
 "             }\n"
 "             QPushButton:hover {\n"
@@ -608,7 +608,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_2 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_2.setObjectName(u"verticalLayoutWidget_2")
-        self.verticalLayoutWidget_2.setGeometry(QRect(0, 783, 406, 141))
+        self.verticalLayoutWidget_2.setGeometry(QRect(0, 210, 151, 111))
         self.verticalLayout_3 = QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -655,7 +655,7 @@ class Ui_DataLogger_Profile(object):
 "                 background-color: black;\n"
 "                 border: none;\n"
 "                 color: black;\n"
-"                 font: 700 12pt \\\"Segoe UI\\\";\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
 "                 border-image: url(buttons_grey.png);\n"
 "             }\n"
 "             QPushButton:hover {\n"
@@ -711,7 +711,7 @@ class Ui_DataLogger_Profile(object):
 "                 background-color: black;\n"
 "                 border: none;\n"
 "                 color: black;\n"
-"                 font: 700 12pt \\\"Segoe UI\\\";\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
 "                 border-image: url(buttons_grey.png);\n"
 "             }\n"
 "             QPushButton:hover {\n"
@@ -725,7 +725,7 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayoutWidget_11 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setObjectName(u"horizontalLayoutWidget_11")
-        self.horizontalLayoutWidget_11.setGeometry(QRect(403, 780, 381, 150))
+        self.horizontalLayoutWidget_11.setGeometry(QRect(160, 210, 111, 111))
         self.horizontalLayout_10 = QHBoxLayout(self.horizontalLayoutWidget_11)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
@@ -771,8 +771,8 @@ class Ui_DataLogger_Profile(object):
         self.pushButton_ProfileScale.setStyleSheet(u"             QPushButton {\n"
 "                 background-color: black;\n"
 "                 border: none;\n"
-"                 color: white;\n"
-"                 font: 700 16pt \\\"Segoe UI\\\";\n"
+"                 color: black;\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
 "                 border-image: url(buttons_grey.png);\n"
 "             }\n"
 "             QPushButton:hover {\n"
@@ -786,7 +786,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_15 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_15.setObjectName(u"verticalLayoutWidget_15")
-        self.verticalLayoutWidget_15.setGeometry(QRect(1230, 790, 339, 141))
+        self.verticalLayoutWidget_15.setGeometry(QRect(280, 270, 151, 51))
         self.verticalLayout_15 = QVBoxLayout(self.verticalLayoutWidget_15)
         self.verticalLayout_15.setObjectName(u"verticalLayout_15")
         self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
@@ -800,7 +800,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_23 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_23.setObjectName(u"verticalLayoutWidget_23")
-        self.verticalLayoutWidget_23.setGeometry(QRect(820, 790, 339, 141))
+        self.verticalLayoutWidget_23.setGeometry(QRect(280, 210, 151, 51))
         self.verticalLayout_16 = QVBoxLayout(self.verticalLayoutWidget_23)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
         self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
@@ -809,7 +809,7 @@ class Ui_DataLogger_Profile(object):
         sizePolicy.setHeightForWidth(self.label_Error.sizePolicy().hasHeightForWidth())
         self.label_Error.setSizePolicy(sizePolicy)
         self.label_Error.setStyleSheet(u"background-color: black;\n"
-"font: 700 18pt \"Segoe UI\";\n"
+"font: 700 10pt \"Segoe UI\";\n"
 "color: rgb(255,0, 0);")
 
         self.verticalLayout_16.addWidget(self.label_Error)
