@@ -23,7 +23,7 @@ class Ui_DataLogger_Profile(object):
     def setupUi(self, DataLogger_Profile):
         if not DataLogger_Profile.objectName():
             DataLogger_Profile.setObjectName(u"DataLogger_Profile")
-        DataLogger_Profile.resize(793, 409)
+        DataLogger_Profile.resize(791, 404)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -35,7 +35,7 @@ class Ui_DataLogger_Profile(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.horizontalLayoutWidget_2 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_2.setObjectName(u"horizontalLayoutWidget_2")
-        self.horizontalLayoutWidget_2.setGeometry(QRect(0, 0, 591, 201))
+        self.horizontalLayoutWidget_2.setGeometry(QRect(0, 0, 781, 261))
         self.horizontalLayout_Tab = QHBoxLayout(self.horizontalLayoutWidget_2)
         self.horizontalLayout_Tab.setObjectName(u"horizontalLayout_Tab")
         self.horizontalLayout_Tab.setContentsMargins(0, 0, 0, 0)
@@ -68,7 +68,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_7 = QWidget(self.tab_ProfileMag)
         self.verticalLayoutWidget_7.setObjectName(u"verticalLayoutWidget_7")
-        self.verticalLayoutWidget_7.setGeometry(QRect(0, 60, 131, 41))
+        self.verticalLayoutWidget_7.setGeometry(QRect(0, 90, 131, 41))
         self.verticalLayout_CurrentMag = QHBoxLayout(self.verticalLayoutWidget_7)
         self.verticalLayout_CurrentMag.setObjectName(u"verticalLayout_CurrentMag")
         self.verticalLayout_CurrentMag.setContentsMargins(0, 0, 0, 0)
@@ -89,7 +89,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_6 = QWidget(self.tab_ProfileMag)
         self.verticalLayoutWidget_6.setObjectName(u"verticalLayoutWidget_6")
-        self.verticalLayoutWidget_6.setGeometry(QRect(0, 120, 131, 41))
+        self.verticalLayoutWidget_6.setGeometry(QRect(0, 180, 131, 41))
         self.verticalLayout_MinMag = QHBoxLayout(self.verticalLayoutWidget_6)
         self.verticalLayout_MinMag.setObjectName(u"verticalLayout_MinMag")
         self.verticalLayout_MinMag.setContentsMargins(0, 0, 0, 0)
@@ -110,7 +110,7 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayoutWidget_12 = QWidget(self.tab_ProfileMag)
         self.horizontalLayoutWidget_12.setObjectName(u"horizontalLayoutWidget_12")
-        self.horizontalLayoutWidget_12.setGeometry(QRect(140, 0, 431, 161))
+        self.horizontalLayoutWidget_12.setGeometry(QRect(140, 0, 621, 221))
         self.horizontalLayout_ProfileMag = QHBoxLayout(self.horizontalLayoutWidget_12)
         self.horizontalLayout_ProfileMag.setObjectName(u"horizontalLayout_ProfileMag")
         self.horizontalLayout_ProfileMag.setContentsMargins(0, 0, 0, 0)
@@ -484,7 +484,7 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayoutWidget_7 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_7.setObjectName(u"horizontalLayoutWidget_7")
-        self.horizontalLayoutWidget_7.setGeometry(QRect(440, 210, 151, 111))
+        self.horizontalLayoutWidget_7.setGeometry(QRect(630, 280, 151, 111))
         self.verticalLayout_7 = QVBoxLayout(self.horizontalLayoutWidget_7)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
         self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -608,7 +608,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_2 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_2.setObjectName(u"verticalLayoutWidget_2")
-        self.verticalLayoutWidget_2.setGeometry(QRect(0, 210, 151, 111))
+        self.verticalLayoutWidget_2.setGeometry(QRect(10, 280, 151, 111))
         self.verticalLayout_3 = QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -725,7 +725,7 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayoutWidget_11 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setObjectName(u"horizontalLayoutWidget_11")
-        self.horizontalLayoutWidget_11.setGeometry(QRect(160, 210, 111, 111))
+        self.horizontalLayoutWidget_11.setGeometry(QRect(180, 280, 111, 111))
         self.horizontalLayout_10 = QHBoxLayout(self.horizontalLayoutWidget_11)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
@@ -786,7 +786,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_15 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_15.setObjectName(u"verticalLayoutWidget_15")
-        self.verticalLayoutWidget_15.setGeometry(QRect(280, 270, 151, 51))
+        self.verticalLayoutWidget_15.setGeometry(QRect(470, 340, 151, 51))
         self.verticalLayout_15 = QVBoxLayout(self.verticalLayoutWidget_15)
         self.verticalLayout_15.setObjectName(u"verticalLayout_15")
         self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
@@ -800,7 +800,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_23 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_23.setObjectName(u"verticalLayoutWidget_23")
-        self.verticalLayoutWidget_23.setGeometry(QRect(280, 210, 151, 51))
+        self.verticalLayoutWidget_23.setGeometry(QRect(470, 280, 151, 51))
         self.verticalLayout_16 = QVBoxLayout(self.verticalLayoutWidget_23)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
         self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)

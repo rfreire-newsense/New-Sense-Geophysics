@@ -7,8 +7,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>793</width>
-    <height>409</height>
+    <width>791</width>
+    <height>404</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -32,8 +32,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>591</width>
-      <height>201</height>
+      <width>781</width>
+      <height>261</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_Tab">
@@ -93,7 +93,7 @@ color: rgb(255, 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>60</y>
+           <y>90</y>
            <width>131</width>
            <height>41</height>
           </rect>
@@ -128,7 +128,7 @@ color: rgb(255, 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>120</y>
+           <y>180</y>
            <width>131</width>
            <height>41</height>
           </rect>
@@ -163,8 +163,8 @@ color: rgb(255, 255, 255);</string>
           <rect>
            <x>140</x>
            <y>0</y>
-           <width>431</width>
-           <height>161</height>
+           <width>621</width>
+           <height>221</height>
           </rect>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_ProfileMag"/>
@@ -808,8 +808,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QWidget" name="horizontalLayoutWidget_7">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>210</y>
+      <x>630</x>
+      <y>280</y>
       <width>151</width>
       <height>111</height>
      </rect>
@@ -1281,8 +1281,8 @@ View</string>
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>210</y>
+      <x>10</x>
+      <y>280</y>
       <width>151</width>
       <height>111</height>
      </rect>
@@ -1752,8 +1752,8 @@ Profile</string>
    <widget class="QWidget" name="horizontalLayoutWidget_11">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>210</y>
+      <x>180</x>
+      <y>280</y>
       <width>111</width>
       <height>111</height>
      </rect>
@@ -1992,8 +1992,8 @@ Scale 10</string>
    <widget class="QWidget" name="verticalLayoutWidget_15">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>270</y>
+      <x>470</x>
+      <y>340</y>
       <width>151</width>
       <height>51</height>
      </rect>
@@ -2020,8 +2020,8 @@ Scale 10</string>
    <widget class="QWidget" name="verticalLayoutWidget_23">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>210</y>
+      <x>470</x>
+      <y>280</y>
       <width>151</width>
       <height>51</height>
      </rect>
