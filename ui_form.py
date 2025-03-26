@@ -116,7 +116,7 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayoutWidget_12 = QWidget(self.tab_ProfileMag)
         self.horizontalLayoutWidget_12.setObjectName(u"horizontalLayoutWidget_12")
-        self.horizontalLayoutWidget_12.setGeometry(QRect(120, 0, 701, 341))
+        self.horizontalLayoutWidget_12.setGeometry(QRect(120, 0, 681, 271))
         self.horizontalLayout_ProfileMag = QHBoxLayout(self.horizontalLayoutWidget_12)
         self.horizontalLayout_ProfileMag.setObjectName(u"horizontalLayout_ProfileMag")
         self.horizontalLayout_ProfileMag.setContentsMargins(0, 0, 0, 0)
