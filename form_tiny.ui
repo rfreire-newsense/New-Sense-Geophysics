@@ -7,8 +7,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>463</height>
+    <width>2050</width>
+    <height>1081</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -27,13 +27,1007 @@
    <string notr="true">background-color: rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1921</width>
+      <height>780</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_Tab">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="tab_ProfileMag">
+        <attribute name="title">
+         <string>Profile Mag</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_MaxMag">
+          <item>
+           <widget class="QLabel" name="label_MaxMag">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MAX</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_MaxMag">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_7">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>70</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_CurrentMag">
+          <item>
+           <widget class="QLabel" name="label_CurrentMag">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MAG
+Value</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_CurrentMag">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>140</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_MinMag">
+          <item>
+           <widget class="QLabel" name="label_MinMag">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MIN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_MinMag">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_12">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>0</y>
+           <width>671</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_ProfileMag"/>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_ProfileOrtho">
+        <attribute name="title">
+         <string>Profile Ortho</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_8">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>70</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_Channel_Y">
+          <item>
+           <widget class="QLabel" name="label_Channel_Y">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>Ch Y</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_Channel_Y">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_9">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_Channel_X">
+          <item>
+           <widget class="QLabel" name="label_Channel_X">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 85, 255);</string>
+            </property>
+            <property name="text">
+             <string>Ch X</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_Channel_X">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_10">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>0</y>
+           <width>671</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="horizontalLayout_ProfileOrtho">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>140</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_Channel_Z">
+          <item>
+           <widget class="QLabel" name="label_Channel_Z">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 170, 0);</string>
+            </property>
+            <property name="text">
+             <string>Ch Z</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_Channel_Z">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_ProfileGPS">
+        <attribute name="title">
+         <string>Profile GPS</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_12">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>140</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_GPS_Alt">
+          <item>
+           <widget class="QLabel" name="label_GPS_Alt">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 170, 0);</string>
+            </property>
+            <property name="text">
+             <string>Alt</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_GPS_Alt">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_13">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>70</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_GPS_Lon">
+          <item>
+           <widget class="QLabel" name="label_GPS_Lon">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>Lon</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_GPS_Lon">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_13">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>0</y>
+           <width>671</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="horizontalLayout_ProfileGPS">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_16">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_GPS_Lat">
+          <item>
+           <widget class="QLabel" name="label_GPS_Lat">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 85, 255);</string>
+            </property>
+            <property name="text">
+             <string>Lat</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_GPS_Lat">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_Profile_RA4500">
+        <attribute name="title">
+         <string>Profile RA4500</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_17">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_MaxRA4500">
+          <item>
+           <widget class="QLabel" name="label_MaxRA4500">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MAX</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_MaxRA4500">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_18">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>70</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_CurrentRA4500">
+          <item>
+           <widget class="QLabel" name="label_CurrentRA4500">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>RA4500
+Value</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_CurrentRA4500">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_19">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>140</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_MinRA4500">
+          <item>
+           <widget class="QLabel" name="label_MinRA4500">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MIN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_MinRA4500">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_14">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>0</y>
+           <width>671</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_RA4500"/>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_Profile_Laser">
+        <attribute name="title">
+         <string>Profile Laser</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_20">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_MaxLaser">
+          <item>
+           <widget class="QLabel" name="label_MaxLaser">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MAX</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_MaxLaser">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_21">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>70</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_CurrentLaser">
+          <item>
+           <widget class="QLabel" name="label_CurrentLaser">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>LASER
+Value</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_CurrentLaser">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_22">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>140</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_MinLaser">
+          <item>
+           <widget class="QLabel" name="label_MinLaser">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MIN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_MinLaser">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_9">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>0</y>
+           <width>671</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_ProfileLaser"/>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_Profile_ADHAT">
+        <attribute name="title">
+         <string>Profile ADHAT</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_51">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>140</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_MinADHAT">
+          <item>
+           <widget class="QLabel" name="label_MinADHAT">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MIN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_MinADHAT">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_52">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>70</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_CurrentADHAT">
+          <item>
+           <widget class="QLabel" name="label_CurrentADHAT">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>ADHAT
+Value</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_CurrentADHAT">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_25">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>0</y>
+           <width>671</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_ADHAT"/>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_53">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="verticalLayout_MaxADHAT">
+          <item>
+           <widget class="QLabel" name="label_MaxADHAT">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>MAX</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber_MaxADHAT">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="digitCount">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
    <widget class="QWidget" name="horizontalLayoutWidget_7">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>310</y>
-      <width>251</width>
-      <height>151</height>
+      <x>1575</x>
+      <y>783</y>
+      <width>339</width>
+      <height>297</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -251,7 +1245,7 @@
         <string notr="true">             QPushButton {
                  background-color: black;
                  border: none;
-                 color: black;
+                 color: white;
                  font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
@@ -482,7 +1476,7 @@ View</string>
         <string notr="true">             QPushButton {
                  background-color: black;
                  border: none;
-                 color: black;
+                 color: white;
                  font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
@@ -504,9 +1498,9 @@ View</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>300</y>
-      <width>181</width>
-      <height>161</height>
+      <y>783</y>
+      <width>406</width>
+      <height>299</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -721,8 +1715,8 @@ View</string>
         <string notr="true">             QPushButton {
                  background-color: black;
                  border: none;
-                 color: black;
-                 font: 700 12pt \&quot;Segoe UI\&quot;;
+                 color: white;
+                 font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
              QPushButton:hover {
@@ -952,8 +1946,8 @@ Profile</string>
         <string notr="true">             QPushButton {
                  background-color: black;
                  border: none;
-                 color: black;
-                 font: 700 12pt \&quot;Segoe UI\&quot;;
+                 color: white;
+                 font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
              QPushButton:hover {
@@ -974,10 +1968,10 @@ Profile</string>
    <widget class="QWidget" name="horizontalLayoutWidget_11">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>300</y>
-      <width>161</width>
-      <height>161</height>
+      <x>403</x>
+      <y>780</y>
+      <width>381</width>
+      <height>150</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_10">
@@ -1192,8 +2186,8 @@ Profile</string>
         <string notr="true">             QPushButton {
                  background-color: black;
                  border: none;
-                 color: black;
-                 font: 700 12pt \&quot;Segoe UI\&quot;;
+                 color: white;
+                 font: 700 16pt \&quot;Segoe UI\&quot;;
                  border-image: url(buttons_grey.png);
              }
              QPushButton:hover {
@@ -1214,10 +2208,10 @@ Scale 10</string>
    <widget class="QWidget" name="verticalLayoutWidget_15">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>300</y>
-      <width>171</width>
-      <height>71</height>
+      <x>1230</x>
+      <y>790</y>
+      <width>339</width>
+      <height>141</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -1242,10 +2236,10 @@ Scale 10</string>
    <widget class="QWidget" name="verticalLayoutWidget_23">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>390</y>
-      <width>171</width>
-      <height>71</height>
+      <x>1230</x>
+      <y>940</y>
+      <width>339</width>
+      <height>141</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -1259,7 +2253,7 @@ Scale 10</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: black;
-font: 700 12pt &quot;Segoe UI&quot;;
+font: 700 18pt &quot;Segoe UI&quot;;
 color: rgb(255,0, 0);</string>
        </property>
        <property name="text">
@@ -1268,1006 +2262,6 @@ color: rgb(255,0, 0);</string>
       </widget>
      </item>
     </layout>
-   </widget>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>800</width>
-      <height>301</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>800</width>
-      <height>600</height>
-     </size>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <property name="tabBarAutoHide">
-     <bool>false</bool>
-    </property>
-    <widget class="QWidget" name="tab_ProfileMag">
-     <attribute name="title">
-      <string>Profile Mag</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_4">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_MaxMag">
-       <item>
-        <widget class="QLabel" name="label_MaxMag">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MAX</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_MaxMag">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_7">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>70</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_CurrentMag">
-       <item>
-        <widget class="QLabel" name="label_CurrentMag">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MAG
-Value</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_CurrentMag">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_6">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>140</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_MinMag">
-       <item>
-        <widget class="QLabel" name="label_MinMag">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MIN</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_MinMag">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_12">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>0</y>
-        <width>671</width>
-        <height>271</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_ProfileMag"/>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_ProfileOrtho">
-     <attribute name="title">
-      <string>Profile Ortho</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_8">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>70</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_Channel_Y">
-       <item>
-        <widget class="QLabel" name="label_Channel_Y">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>Ch Y</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_Channel_Y">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>7</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_9">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_Channel_X">
-       <item>
-        <widget class="QLabel" name="label_Channel_X">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(0, 85, 255);</string>
-         </property>
-         <property name="text">
-          <string>Ch X</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_Channel_X">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>7</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_10">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>0</y>
-        <width>671</width>
-        <height>271</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="horizontalLayout_ProfileOrtho">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="sizeConstraint">
-        <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_10">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>140</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_Channel_Z">
-       <item>
-        <widget class="QLabel" name="label_Channel_Z">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(0, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>Ch Z</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_Channel_Z">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>7</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_ProfileGPS">
-     <attribute name="title">
-      <string>Profile GPS</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_12">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>140</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_GPS_Alt">
-       <item>
-        <widget class="QLabel" name="label_GPS_Alt">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(0, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>Alt</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_GPS_Alt">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>7</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_13">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>70</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_GPS_Lon">
-       <item>
-        <widget class="QLabel" name="label_GPS_Lon">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>Lon</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_GPS_Lon">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>7</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_13">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>0</y>
-        <width>671</width>
-        <height>271</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="horizontalLayout_ProfileGPS">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="sizeConstraint">
-        <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_16">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_GPS_Lat">
-       <item>
-        <widget class="QLabel" name="label_GPS_Lat">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(0, 85, 255);</string>
-         </property>
-         <property name="text">
-          <string>Lat</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_GPS_Lat">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>7</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_Profile_RA4500">
-     <attribute name="title">
-      <string>Profile RA4500</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_17">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_MaxRA4500">
-       <item>
-        <widget class="QLabel" name="label_MaxRA4500">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MAX</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_MaxRA4500">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_18">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>70</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_CurrentRA4500">
-       <item>
-        <widget class="QLabel" name="label_CurrentRA4500">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>RA4500
-Value</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_CurrentRA4500">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_19">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>140</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_MinRA4500">
-       <item>
-        <widget class="QLabel" name="label_MinRA4500">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MIN</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_MinRA4500">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_14">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>0</y>
-        <width>671</width>
-        <height>271</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_RA4500"/>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_Profile_Laser">
-     <attribute name="title">
-      <string>Profile Laser</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_20">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_MaxLaser">
-       <item>
-        <widget class="QLabel" name="label_MaxLaser">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MAX</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_MaxLaser">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_21">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>70</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_CurrentLaser">
-       <item>
-        <widget class="QLabel" name="label_CurrentLaser">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>LASER
-Value</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_CurrentLaser">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_22">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>140</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_MinLaser">
-       <item>
-        <widget class="QLabel" name="label_MinLaser">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MIN</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_MinLaser">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_9">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>0</y>
-        <width>671</width>
-        <height>271</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_ProfileLaser"/>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_Profile_ADHAT">
-     <attribute name="title">
-      <string>Profile ADHAT</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_51">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>140</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_MinADHAT">
-       <item>
-        <widget class="QLabel" name="label_MinADHAT">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MIN</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_MinADHAT">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_52">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>70</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_CurrentADHAT">
-       <item>
-        <widget class="QLabel" name="label_CurrentADHAT">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>ADHAT
-Value</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_CurrentADHAT">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_25">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>0</y>
-        <width>671</width>
-        <height>271</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_ADHAT"/>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_53">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>111</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="verticalLayout_MaxADHAT">
-       <item>
-        <widget class="QLabel" name="label_MaxADHAT">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>MAX</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLCDNumber" name="lcdNumber_MaxADHAT">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="digitCount">
-          <number>6</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
    </widget>
   </widget>
  </widget>
