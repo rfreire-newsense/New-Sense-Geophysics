@@ -23,7 +23,7 @@ class Ui_DataLogger_Profile(object):
     def setupUi(self, DataLogger_Profile):
         if not DataLogger_Profile.objectName():
             DataLogger_Profile.setObjectName(u"DataLogger_Profile")
-        DataLogger_Profile.resize(586, 311)
+        DataLogger_Profile.resize(800, 600)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -33,6 +33,7 @@ class Ui_DataLogger_Profile(object):
         DataLogger_Profile.setStyleSheet(u"background-color: rgb(0, 0, 0);")
         self.centralwidget = QWidget(DataLogger_Profile)
         self.centralwidget.setObjectName(u"centralwidget")
+        self.centralwidget.setMinimumSize(QSize(800, 600))
         self.horizontalLayoutWidget_2 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_2.setObjectName(u"horizontalLayoutWidget_2")
         self.horizontalLayoutWidget_2.setGeometry(QRect(0, 0, 1151, 641))
@@ -114,6 +115,400 @@ class Ui_DataLogger_Profile(object):
         self.horizontalLayout_ProfileMag = QHBoxLayout(self.horizontalLayoutWidget_12)
         self.horizontalLayout_ProfileMag.setObjectName(u"horizontalLayout_ProfileMag")
         self.horizontalLayout_ProfileMag.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayoutWidget_23 = QWidget(self.tab_ProfileMag)
+        self.verticalLayoutWidget_23.setObjectName(u"verticalLayoutWidget_23")
+        self.verticalLayoutWidget_23.setGeometry(QRect(290, 460, 151, 51))
+        self.verticalLayout_16 = QVBoxLayout(self.verticalLayoutWidget_23)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
+        self.label_Error = QLabel(self.verticalLayoutWidget_23)
+        self.label_Error.setObjectName(u"label_Error")
+        sizePolicy.setHeightForWidth(self.label_Error.sizePolicy().hasHeightForWidth())
+        self.label_Error.setSizePolicy(sizePolicy)
+        self.label_Error.setStyleSheet(u"background-color: black;\n"
+"font: 700 10pt \"Segoe UI\";\n"
+"color: rgb(255,0, 0);")
+
+        self.verticalLayout_16.addWidget(self.label_Error)
+
+        self.horizontalLayoutWidget_15 = QWidget(self.centralwidget)
+        self.horizontalLayoutWidget_15.setObjectName(u"horizontalLayoutWidget_15")
+        self.horizontalLayoutWidget_15.setGeometry(QRect(400, 930, 381, 150))
+        self.horizontalLayout_11 = QHBoxLayout(self.horizontalLayoutWidget_15)
+        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.horizontalLayout_11.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_Channel = QPushButton(self.horizontalLayoutWidget_15)
+        self.pushButton_Channel.setObjectName(u"pushButton_Channel")
+        self.pushButton_Channel.setEnabled(True)
+        sizePolicy.setHeightForWidth(self.pushButton_Channel.sizePolicy().hasHeightForWidth())
+        self.pushButton_Channel.setSizePolicy(sizePolicy)
+        palette5 = QPalette()
+        palette5.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette5.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette5.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette5.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        palette5.setBrush(QPalette.Active, QPalette.Base, brush1)
+        palette5.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush17 = QBrush(QColor(255, 255, 255, 128))
+        brush17.setStyle(Qt.NoBrush)
+        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Active, QPalette.PlaceholderText, brush17)
+        # endif
+        palette5.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette5.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette5.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette5.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        palette5.setBrush(QPalette.Inactive, QPalette.Base, brush1)
+        palette5.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush18 = QBrush(QColor(255, 255, 255, 128))
+        brush18.setStyle(Qt.NoBrush)
+        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush18)
+        # endif
+        palette5.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette5.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette5.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette5.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
+        palette5.setBrush(QPalette.Disabled, QPalette.Base, brush1)
+        palette5.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        brush19 = QBrush(QColor(255, 255, 255, 128))
+        brush19.setStyle(Qt.NoBrush)
+        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush19)
+        # endif
+        self.pushButton_Channel.setPalette(palette5)
+        self.pushButton_Channel.setStyleSheet(u"             QPushButton {\n"
+                                              "                 background-color: black;\n"
+                                              "                 border: none;\n"
+                                              "                 color: white;\n"
+                                              "                 font: 700 16pt \\\"Segoe UI\\\";\n"
+                                              "                 border-image: url(buttons_grey.png);\n"
+                                              "             }\n"
+                                              "             QPushButton:hover {\n"
+                                              "                 background-color: #333;\n"
+                                              "             }\n"
+                                              "             QPushButton:pressed {\n"
+                                              "                border-image: url(buttons_grey_p.png);\n"
+                                              "             }")
+
+        self.horizontalLayout_11.addWidget(self.pushButton_Channel)
+
+        self.horizontalLayoutWidget_11 = QWidget(self.tab_ProfileMag)
+        self.horizontalLayoutWidget_11.setObjectName(u"horizontalLayoutWidget_11")
+        self.horizontalLayoutWidget_11.setGeometry(QRect(170, 460, 111, 111))
+        self.horizontalLayout_10 = QHBoxLayout(self.horizontalLayoutWidget_11)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_ProfileScale = QPushButton(self.horizontalLayoutWidget_11)
+        self.pushButton_ProfileScale.setObjectName(u"pushButton_ProfileScale")
+        sizePolicy.setHeightForWidth(self.pushButton_ProfileScale.sizePolicy().hasHeightForWidth())
+        self.pushButton_ProfileScale.setSizePolicy(sizePolicy)
+        palette = QPalette()
+        brush = QBrush(QColor(255, 255, 255, 255))
+        brush.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        brush1 = QBrush(QColor(0, 0, 0, 255))
+        brush1.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        palette.setBrush(QPalette.Active, QPalette.Base, brush1)
+        palette.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush2 = QBrush(QColor(255, 255, 255, 128))
+        brush2.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush2)
+#endif
+        palette.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        palette.setBrush(QPalette.Inactive, QPalette.Base, brush1)
+        palette.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush3 = QBrush(QColor(255, 255, 255, 128))
+        brush3.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush3)
+#endif
+        palette.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        brush4 = QBrush(QColor(255, 255, 255, 135))
+        brush4.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
+        palette.setBrush(QPalette.Disabled, QPalette.Base, brush1)
+        palette.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        brush5 = QBrush(QColor(255, 255, 255, 128))
+        brush5.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush5)
+#endif
+        self.pushButton_ProfileScale.setPalette(palette)
+        self.pushButton_ProfileScale.setStyleSheet(u"             QPushButton {\n"
+"                 background-color: black;\n"
+"                 border: none;\n"
+"                 color: black;\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
+"                 border-image: url(buttons_grey.png);\n"
+"             }\n"
+"             QPushButton:hover {\n"
+"                 background-color: #333;\n"
+"             }\n"
+"             QPushButton:pressed {\n"
+"                border-image: url(buttons_grey_p.png);\n"
+"             }")
+
+        self.horizontalLayout_10.addWidget(self.pushButton_ProfileScale)
+
+        self.horizontalLayoutWidget_7 = QWidget(self.tab_ProfileMag)
+        self.horizontalLayoutWidget_7.setObjectName(u"horizontalLayoutWidget_7")
+        self.horizontalLayoutWidget_7.setGeometry(QRect(450, 460, 151, 111))
+        self.verticalLayout_7 = QVBoxLayout(self.horizontalLayoutWidget_7)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_ProfileView = QPushButton(self.horizontalLayoutWidget_7)
+        self.pushButton_ProfileView.setObjectName(u"pushButton_ProfileView")
+        sizePolicy.setHeightForWidth(self.pushButton_ProfileView.sizePolicy().hasHeightForWidth())
+        self.pushButton_ProfileView.setSizePolicy(sizePolicy)
+        palette1 = QPalette()
+        palette1.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette1.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette1.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette1.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        palette1.setBrush(QPalette.Active, QPalette.Base, brush1)
+        palette1.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush6 = QBrush(QColor(255, 255, 255, 128))
+        brush6.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Active, QPalette.PlaceholderText, brush6)
+#endif
+        palette1.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette1.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette1.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette1.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush1)
+        palette1.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush7 = QBrush(QColor(255, 255, 255, 128))
+        brush7.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush7)
+#endif
+        palette1.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette1.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
+        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush1)
+        palette1.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        brush8 = QBrush(QColor(255, 255, 255, 128))
+        brush8.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush8)
+#endif
+        self.pushButton_ProfileView.setPalette(palette1)
+        self.pushButton_ProfileView.setAutoFillBackground(False)
+        self.pushButton_ProfileView.setStyleSheet(u"             QPushButton {\n"
+"                 background-color: black;\n"
+"                 border: none;\n"
+"                 color: black;\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
+"                 border-image: url(buttons_grey.png);\n"
+"             }\n"
+"             QPushButton:hover {\n"
+"                 background-color: #333;\n"
+"             }\n"
+"             QPushButton:pressed {\n"
+"                border-image: url(buttons_grey_p.png);\n"
+"             }")
+        self.pushButton_ProfileView.setCheckable(False)
+
+        self.verticalLayout_7.addWidget(self.pushButton_ProfileView)
+
+        self.pushButton_Exit = QPushButton(self.horizontalLayoutWidget_7)
+        self.pushButton_Exit.setObjectName(u"pushButton_Exit")
+        sizePolicy.setHeightForWidth(self.pushButton_Exit.sizePolicy().hasHeightForWidth())
+        self.pushButton_Exit.setSizePolicy(sizePolicy)
+        palette2 = QPalette()
+        palette2.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette2.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette2.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette2.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        palette2.setBrush(QPalette.Active, QPalette.Base, brush1)
+        palette2.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush9 = QBrush(QColor(255, 255, 255, 128))
+        brush9.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Active, QPalette.PlaceholderText, brush9)
+#endif
+        palette2.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette2.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette2.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette2.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        palette2.setBrush(QPalette.Inactive, QPalette.Base, brush1)
+        palette2.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush10 = QBrush(QColor(255, 255, 255, 128))
+        brush10.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush10)
+#endif
+        palette2.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette2.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette2.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette2.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
+        palette2.setBrush(QPalette.Disabled, QPalette.Base, brush1)
+        palette2.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        brush11 = QBrush(QColor(255, 255, 255, 128))
+        brush11.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush11)
+#endif
+        self.pushButton_Exit.setPalette(palette2)
+        self.pushButton_Exit.setStyleSheet(u"             QPushButton {\n"
+"                 background-color: black;\n"
+"                 border: none;\n"
+"                 color: black;\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
+"                 border-image: url(buttons_grey.png);\n"
+"             }\n"
+"             QPushButton:hover {\n"
+"                 background-color: #333;\n"
+"             }\n"
+"             QPushButton:pressed {\n"
+"                border-image: url(buttons_grey_p.png);\n"
+"             }")
+
+        self.verticalLayout_7.addWidget(self.pushButton_Exit)
+
+        self.verticalLayoutWidget_15 = QWidget(self.tab_ProfileMag)
+        self.verticalLayoutWidget_15.setObjectName(u"verticalLayoutWidget_15")
+        self.verticalLayoutWidget_15.setGeometry(QRect(290, 520, 151, 51))
+        self.verticalLayout_15 = QVBoxLayout(self.verticalLayoutWidget_15)
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
+        self.label_Status = QLabel(self.verticalLayoutWidget_15)
+        self.label_Status.setObjectName(u"label_Status")
+        sizePolicy.setHeightForWidth(self.label_Status.sizePolicy().hasHeightForWidth())
+        self.label_Status.setSizePolicy(sizePolicy)
+        self.label_Status.setStyleSheet(u"background-color: black;")
+
+        self.verticalLayout_15.addWidget(self.label_Status)
+
+        self.verticalLayoutWidget_2 = QWidget(self.tab_ProfileMag)
+        self.verticalLayoutWidget_2.setObjectName(u"verticalLayoutWidget_2")
+        self.verticalLayoutWidget_2.setGeometry(QRect(10, 460, 151, 111))
+        self.verticalLayout_3 = QVBoxLayout(self.verticalLayoutWidget_2)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_Start_Profile = QPushButton(self.verticalLayoutWidget_2)
+        self.pushButton_Start_Profile.setObjectName(u"pushButton_Start_Profile")
+        sizePolicy.setHeightForWidth(self.pushButton_Start_Profile.sizePolicy().hasHeightForWidth())
+        self.pushButton_Start_Profile.setSizePolicy(sizePolicy)
+        palette3 = QPalette()
+        palette3.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette3.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette3.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette3.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        palette3.setBrush(QPalette.Active, QPalette.Base, brush1)
+        palette3.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush12 = QBrush(QColor(255, 255, 255, 128))
+        brush12.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Active, QPalette.PlaceholderText, brush12)
+#endif
+        palette3.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette3.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette3.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette3.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        palette3.setBrush(QPalette.Inactive, QPalette.Base, brush1)
+        palette3.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush13 = QBrush(QColor(255, 255, 255, 128))
+        brush13.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush13)
+#endif
+        palette3.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette3.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette3.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette3.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
+        palette3.setBrush(QPalette.Disabled, QPalette.Base, brush1)
+        palette3.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        brush14 = QBrush(QColor(255, 255, 255, 128))
+        brush14.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush14)
+#endif
+        self.pushButton_Start_Profile.setPalette(palette3)
+        self.pushButton_Start_Profile.setStyleSheet(u"             QPushButton {\n"
+"                 background-color: black;\n"
+"                 border: none;\n"
+"                 color: black;\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
+"                 border-image: url(buttons_grey.png);\n"
+"             }\n"
+"             QPushButton:hover {\n"
+"                 background-color: #333;\n"
+"             }\n"
+"             QPushButton:pressed {\n"
+"                border-image: url(buttons_grey_p.png);\n"
+"             }")
+        self.pushButton_Start_Profile.setCheckable(True)
+
+        self.verticalLayout_3.addWidget(self.pushButton_Start_Profile)
+
+        self.pushButton_Stop_Profile = QPushButton(self.verticalLayoutWidget_2)
+        self.pushButton_Stop_Profile.setObjectName(u"pushButton_Stop_Profile")
+        sizePolicy.setHeightForWidth(self.pushButton_Stop_Profile.sizePolicy().hasHeightForWidth())
+        self.pushButton_Stop_Profile.setSizePolicy(sizePolicy)
+        palette4 = QPalette()
+        palette4.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette4.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette4.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette4.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        palette4.setBrush(QPalette.Active, QPalette.Base, brush1)
+        palette4.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush15 = QBrush(QColor(255, 255, 255, 128))
+        brush15.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette4.setBrush(QPalette.Active, QPalette.PlaceholderText, brush15)
+#endif
+        palette4.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette4.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette4.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette4.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        palette4.setBrush(QPalette.Inactive, QPalette.Base, brush1)
+        palette4.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush16 = QBrush(QColor(255, 255, 255, 128))
+        brush16.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette4.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush16)
+#endif
+        palette4.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette4.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette4.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette4.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
+        palette4.setBrush(QPalette.Disabled, QPalette.Base, brush1)
+        palette4.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        brush17 = QBrush(QColor(255, 255, 255, 128))
+        brush17.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette4.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush17)
+#endif
+        self.pushButton_Stop_Profile.setPalette(palette4)
+        self.pushButton_Stop_Profile.setStyleSheet(u"             QPushButton {\n"
+"                 background-color: black;\n"
+"                 border: none;\n"
+"                 color: black;\n"
+"                 font: 700 10pt \\\"Segoe UI\\\";\n"
+"                 border-image: url(buttons_grey.png);\n"
+"             }\n"
+"             QPushButton:hover {\n"
+"                 background-color: #333;\n"
+"             }\n"
+"             QPushButton:pressed {\n"
+"                border-image: url(buttons_grey_p.png);\n"
+"             }")
+
+        self.verticalLayout_3.addWidget(self.pushButton_Stop_Profile)
+
         self.tabWidget.addTab(self.tab_ProfileMag, "")
         self.tab_ProfileOrtho = QWidget()
         self.tab_ProfileOrtho.setObjectName(u"tab_ProfileOrtho")
@@ -288,7 +683,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_18 = QWidget(self.tab_Profile_RA4500)
         self.verticalLayoutWidget_18.setObjectName(u"verticalLayoutWidget_18")
-        self.verticalLayoutWidget_18.setGeometry(QRect(0, 60, 131, 46))
+        self.verticalLayoutWidget_18.setGeometry(QRect(0, 60, 140, 46))
         self.verticalLayout_CurrentRA4500 = QHBoxLayout(self.verticalLayoutWidget_18)
         self.verticalLayout_CurrentRA4500.setObjectName(u"verticalLayout_CurrentRA4500")
         self.verticalLayout_CurrentRA4500.setContentsMargins(0, 0, 0, 0)
@@ -432,7 +827,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_52 = QWidget(self.tab_Profile_ADHAT)
         self.verticalLayoutWidget_52.setObjectName(u"verticalLayoutWidget_52")
-        self.verticalLayoutWidget_52.setGeometry(QRect(0, 60, 131, 41))
+        self.verticalLayoutWidget_52.setGeometry(QRect(0, 60, 136, 46))
         self.verticalLayout_CurrentADHAT = QHBoxLayout(self.verticalLayoutWidget_52)
         self.verticalLayout_CurrentADHAT.setObjectName(u"verticalLayout_CurrentADHAT")
         self.verticalLayout_CurrentADHAT.setContentsMargins(0, 0, 0, 0)
@@ -482,400 +877,6 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayout_Tab.addWidget(self.tabWidget)
 
-        self.horizontalLayoutWidget_7 = QWidget(self.centralwidget)
-        self.horizontalLayoutWidget_7.setObjectName(u"horizontalLayoutWidget_7")
-        self.horizontalLayoutWidget_7.setGeometry(QRect(430, 200, 151, 111))
-        self.verticalLayout_7 = QVBoxLayout(self.horizontalLayoutWidget_7)
-        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
-        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_ProfileView = QPushButton(self.horizontalLayoutWidget_7)
-        self.pushButton_ProfileView.setObjectName(u"pushButton_ProfileView")
-        sizePolicy.setHeightForWidth(self.pushButton_ProfileView.sizePolicy().hasHeightForWidth())
-        self.pushButton_ProfileView.setSizePolicy(sizePolicy)
-        palette = QPalette()
-        brush = QBrush(QColor(255, 255, 255, 255))
-        brush.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Active, QPalette.WindowText, brush)
-        brush1 = QBrush(QColor(0, 0, 0, 255))
-        brush1.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Active, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Active, QPalette.Text, brush)
-        palette.setBrush(QPalette.Active, QPalette.ButtonText, brush)
-        palette.setBrush(QPalette.Active, QPalette.Base, brush1)
-        palette.setBrush(QPalette.Active, QPalette.Window, brush1)
-        brush2 = QBrush(QColor(255, 255, 255, 128))
-        brush2.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush2)
-#endif
-        palette.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
-        palette.setBrush(QPalette.Inactive, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Inactive, QPalette.Text, brush)
-        palette.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
-        palette.setBrush(QPalette.Inactive, QPalette.Base, brush1)
-        palette.setBrush(QPalette.Inactive, QPalette.Window, brush1)
-        brush3 = QBrush(QColor(255, 255, 255, 128))
-        brush3.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush3)
-#endif
-        palette.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
-        palette.setBrush(QPalette.Disabled, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Disabled, QPalette.Text, brush)
-        brush4 = QBrush(QColor(255, 255, 255, 135))
-        brush4.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
-        palette.setBrush(QPalette.Disabled, QPalette.Base, brush1)
-        palette.setBrush(QPalette.Disabled, QPalette.Window, brush1)
-        brush5 = QBrush(QColor(255, 255, 255, 128))
-        brush5.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush5)
-#endif
-        self.pushButton_ProfileView.setPalette(palette)
-        self.pushButton_ProfileView.setAutoFillBackground(False)
-        self.pushButton_ProfileView.setStyleSheet(u"             QPushButton {\n"
-"                 background-color: black;\n"
-"                 border: none;\n"
-"                 color: black;\n"
-"                 font: 700 10pt \\\"Segoe UI\\\";\n"
-"                 border-image: url(buttons_grey.png);\n"
-"             }\n"
-"             QPushButton:hover {\n"
-"                 background-color: #333;\n"
-"             }\n"
-"             QPushButton:pressed {\n"
-"                border-image: url(buttons_grey_p.png);\n"
-"             }")
-        self.pushButton_ProfileView.setCheckable(False)
-
-        self.verticalLayout_7.addWidget(self.pushButton_ProfileView)
-
-        self.pushButton_Exit = QPushButton(self.horizontalLayoutWidget_7)
-        self.pushButton_Exit.setObjectName(u"pushButton_Exit")
-        sizePolicy.setHeightForWidth(self.pushButton_Exit.sizePolicy().hasHeightForWidth())
-        self.pushButton_Exit.setSizePolicy(sizePolicy)
-        palette1 = QPalette()
-        palette1.setBrush(QPalette.Active, QPalette.WindowText, brush)
-        palette1.setBrush(QPalette.Active, QPalette.Button, brush1)
-        palette1.setBrush(QPalette.Active, QPalette.Text, brush)
-        palette1.setBrush(QPalette.Active, QPalette.ButtonText, brush)
-        palette1.setBrush(QPalette.Active, QPalette.Base, brush1)
-        palette1.setBrush(QPalette.Active, QPalette.Window, brush1)
-        brush6 = QBrush(QColor(255, 255, 255, 128))
-        brush6.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Active, QPalette.PlaceholderText, brush6)
-#endif
-        palette1.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
-        palette1.setBrush(QPalette.Inactive, QPalette.Button, brush1)
-        palette1.setBrush(QPalette.Inactive, QPalette.Text, brush)
-        palette1.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
-        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush1)
-        palette1.setBrush(QPalette.Inactive, QPalette.Window, brush1)
-        brush7 = QBrush(QColor(255, 255, 255, 128))
-        brush7.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush7)
-#endif
-        palette1.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
-        palette1.setBrush(QPalette.Disabled, QPalette.Button, brush1)
-        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush)
-        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
-        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush1)
-        palette1.setBrush(QPalette.Disabled, QPalette.Window, brush1)
-        brush8 = QBrush(QColor(255, 255, 255, 128))
-        brush8.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush8)
-#endif
-        self.pushButton_Exit.setPalette(palette1)
-        self.pushButton_Exit.setStyleSheet(u"             QPushButton {\n"
-"                 background-color: black;\n"
-"                 border: none;\n"
-"                 color: black;\n"
-"                 font: 700 10pt \\\"Segoe UI\\\";\n"
-"                 border-image: url(buttons_grey.png);\n"
-"             }\n"
-"             QPushButton:hover {\n"
-"                 background-color: #333;\n"
-"             }\n"
-"             QPushButton:pressed {\n"
-"                border-image: url(buttons_grey_p.png);\n"
-"             }")
-
-        self.verticalLayout_7.addWidget(self.pushButton_Exit)
-
-        self.verticalLayoutWidget_2 = QWidget(self.centralwidget)
-        self.verticalLayoutWidget_2.setObjectName(u"verticalLayoutWidget_2")
-        self.verticalLayoutWidget_2.setGeometry(QRect(-10, 200, 151, 111))
-        self.verticalLayout_3 = QVBoxLayout(self.verticalLayoutWidget_2)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_Start_Profile = QPushButton(self.verticalLayoutWidget_2)
-        self.pushButton_Start_Profile.setObjectName(u"pushButton_Start_Profile")
-        sizePolicy.setHeightForWidth(self.pushButton_Start_Profile.sizePolicy().hasHeightForWidth())
-        self.pushButton_Start_Profile.setSizePolicy(sizePolicy)
-        palette2 = QPalette()
-        palette2.setBrush(QPalette.Active, QPalette.WindowText, brush)
-        palette2.setBrush(QPalette.Active, QPalette.Button, brush1)
-        palette2.setBrush(QPalette.Active, QPalette.Text, brush)
-        palette2.setBrush(QPalette.Active, QPalette.ButtonText, brush)
-        palette2.setBrush(QPalette.Active, QPalette.Base, brush1)
-        palette2.setBrush(QPalette.Active, QPalette.Window, brush1)
-        brush9 = QBrush(QColor(255, 255, 255, 128))
-        brush9.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette.Active, QPalette.PlaceholderText, brush9)
-#endif
-        palette2.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
-        palette2.setBrush(QPalette.Inactive, QPalette.Button, brush1)
-        palette2.setBrush(QPalette.Inactive, QPalette.Text, brush)
-        palette2.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
-        palette2.setBrush(QPalette.Inactive, QPalette.Base, brush1)
-        palette2.setBrush(QPalette.Inactive, QPalette.Window, brush1)
-        brush10 = QBrush(QColor(255, 255, 255, 128))
-        brush10.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush10)
-#endif
-        palette2.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
-        palette2.setBrush(QPalette.Disabled, QPalette.Button, brush1)
-        palette2.setBrush(QPalette.Disabled, QPalette.Text, brush)
-        palette2.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
-        palette2.setBrush(QPalette.Disabled, QPalette.Base, brush1)
-        palette2.setBrush(QPalette.Disabled, QPalette.Window, brush1)
-        brush11 = QBrush(QColor(255, 255, 255, 128))
-        brush11.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette2.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush11)
-#endif
-        self.pushButton_Start_Profile.setPalette(palette2)
-        self.pushButton_Start_Profile.setStyleSheet(u"             QPushButton {\n"
-"                 background-color: black;\n"
-"                 border: none;\n"
-"                 color: black;\n"
-"                 font: 700 10pt \\\"Segoe UI\\\";\n"
-"                 border-image: url(buttons_grey.png);\n"
-"             }\n"
-"             QPushButton:hover {\n"
-"                 background-color: #333;\n"
-"             }\n"
-"             QPushButton:pressed {\n"
-"                border-image: url(buttons_grey_p.png);\n"
-"             }")
-        self.pushButton_Start_Profile.setCheckable(True)
-
-        self.verticalLayout_3.addWidget(self.pushButton_Start_Profile)
-
-        self.pushButton_Stop_Profile = QPushButton(self.verticalLayoutWidget_2)
-        self.pushButton_Stop_Profile.setObjectName(u"pushButton_Stop_Profile")
-        sizePolicy.setHeightForWidth(self.pushButton_Stop_Profile.sizePolicy().hasHeightForWidth())
-        self.pushButton_Stop_Profile.setSizePolicy(sizePolicy)
-        palette3 = QPalette()
-        palette3.setBrush(QPalette.Active, QPalette.WindowText, brush)
-        palette3.setBrush(QPalette.Active, QPalette.Button, brush1)
-        palette3.setBrush(QPalette.Active, QPalette.Text, brush)
-        palette3.setBrush(QPalette.Active, QPalette.ButtonText, brush)
-        palette3.setBrush(QPalette.Active, QPalette.Base, brush1)
-        palette3.setBrush(QPalette.Active, QPalette.Window, brush1)
-        brush12 = QBrush(QColor(255, 255, 255, 128))
-        brush12.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette.Active, QPalette.PlaceholderText, brush12)
-#endif
-        palette3.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
-        palette3.setBrush(QPalette.Inactive, QPalette.Button, brush1)
-        palette3.setBrush(QPalette.Inactive, QPalette.Text, brush)
-        palette3.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
-        palette3.setBrush(QPalette.Inactive, QPalette.Base, brush1)
-        palette3.setBrush(QPalette.Inactive, QPalette.Window, brush1)
-        brush13 = QBrush(QColor(255, 255, 255, 128))
-        brush13.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush13)
-#endif
-        palette3.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
-        palette3.setBrush(QPalette.Disabled, QPalette.Button, brush1)
-        palette3.setBrush(QPalette.Disabled, QPalette.Text, brush)
-        palette3.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
-        palette3.setBrush(QPalette.Disabled, QPalette.Base, brush1)
-        palette3.setBrush(QPalette.Disabled, QPalette.Window, brush1)
-        brush14 = QBrush(QColor(255, 255, 255, 128))
-        brush14.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette3.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush14)
-#endif
-        self.pushButton_Stop_Profile.setPalette(palette3)
-        self.pushButton_Stop_Profile.setStyleSheet(u"             QPushButton {\n"
-"                 background-color: black;\n"
-"                 border: none;\n"
-"                 color: black;\n"
-"                 font: 700 10pt \\\"Segoe UI\\\";\n"
-"                 border-image: url(buttons_grey.png);\n"
-"             }\n"
-"             QPushButton:hover {\n"
-"                 background-color: #333;\n"
-"             }\n"
-"             QPushButton:pressed {\n"
-"                border-image: url(buttons_grey_p.png);\n"
-"             }")
-
-        self.verticalLayout_3.addWidget(self.pushButton_Stop_Profile)
-
-        self.horizontalLayoutWidget_11 = QWidget(self.centralwidget)
-        self.horizontalLayoutWidget_11.setObjectName(u"horizontalLayoutWidget_11")
-        self.horizontalLayoutWidget_11.setGeometry(QRect(150, 200, 111, 111))
-        self.horizontalLayout_10 = QHBoxLayout(self.horizontalLayoutWidget_11)
-        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
-        self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_ProfileScale = QPushButton(self.horizontalLayoutWidget_11)
-        self.pushButton_ProfileScale.setObjectName(u"pushButton_ProfileScale")
-        sizePolicy.setHeightForWidth(self.pushButton_ProfileScale.sizePolicy().hasHeightForWidth())
-        self.pushButton_ProfileScale.setSizePolicy(sizePolicy)
-        palette4 = QPalette()
-        palette4.setBrush(QPalette.Active, QPalette.WindowText, brush)
-        palette4.setBrush(QPalette.Active, QPalette.Button, brush1)
-        palette4.setBrush(QPalette.Active, QPalette.Text, brush)
-        palette4.setBrush(QPalette.Active, QPalette.ButtonText, brush)
-        palette4.setBrush(QPalette.Active, QPalette.Base, brush1)
-        palette4.setBrush(QPalette.Active, QPalette.Window, brush1)
-        brush15 = QBrush(QColor(255, 255, 255, 128))
-        brush15.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette.Active, QPalette.PlaceholderText, brush15)
-#endif
-        palette4.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
-        palette4.setBrush(QPalette.Inactive, QPalette.Button, brush1)
-        palette4.setBrush(QPalette.Inactive, QPalette.Text, brush)
-        palette4.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
-        palette4.setBrush(QPalette.Inactive, QPalette.Base, brush1)
-        palette4.setBrush(QPalette.Inactive, QPalette.Window, brush1)
-        brush16 = QBrush(QColor(255, 255, 255, 128))
-        brush16.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush16)
-#endif
-        palette4.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
-        palette4.setBrush(QPalette.Disabled, QPalette.Button, brush1)
-        palette4.setBrush(QPalette.Disabled, QPalette.Text, brush)
-        palette4.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
-        palette4.setBrush(QPalette.Disabled, QPalette.Base, brush1)
-        palette4.setBrush(QPalette.Disabled, QPalette.Window, brush1)
-        brush17 = QBrush(QColor(255, 255, 255, 128))
-        brush17.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette4.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush17)
-#endif
-        self.pushButton_ProfileScale.setPalette(palette4)
-        self.pushButton_ProfileScale.setStyleSheet(u"             QPushButton {\n"
-"                 background-color: black;\n"
-"                 border: none;\n"
-"                 color: black;\n"
-"                 font: 700 10pt \\\"Segoe UI\\\";\n"
-"                 border-image: url(buttons_grey.png);\n"
-"             }\n"
-"             QPushButton:hover {\n"
-"                 background-color: #333;\n"
-"             }\n"
-"             QPushButton:pressed {\n"
-"                border-image: url(buttons_grey_p.png);\n"
-"             }")
-
-        self.horizontalLayout_10.addWidget(self.pushButton_ProfileScale)
-
-        self.verticalLayoutWidget_15 = QWidget(self.centralwidget)
-        self.verticalLayoutWidget_15.setObjectName(u"verticalLayoutWidget_15")
-        self.verticalLayoutWidget_15.setGeometry(QRect(270, 260, 151, 51))
-        self.verticalLayout_15 = QVBoxLayout(self.verticalLayoutWidget_15)
-        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
-        self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
-        self.label_Status = QLabel(self.verticalLayoutWidget_15)
-        self.label_Status.setObjectName(u"label_Status")
-        sizePolicy.setHeightForWidth(self.label_Status.sizePolicy().hasHeightForWidth())
-        self.label_Status.setSizePolicy(sizePolicy)
-        self.label_Status.setStyleSheet(u"background-color: black;")
-
-        self.verticalLayout_15.addWidget(self.label_Status)
-
-        self.verticalLayoutWidget_23 = QWidget(self.centralwidget)
-        self.verticalLayoutWidget_23.setObjectName(u"verticalLayoutWidget_23")
-        self.verticalLayoutWidget_23.setGeometry(QRect(270, 200, 151, 51))
-        self.verticalLayout_16 = QVBoxLayout(self.verticalLayoutWidget_23)
-        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
-        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
-        self.label_Error = QLabel(self.verticalLayoutWidget_23)
-        self.label_Error.setObjectName(u"label_Error")
-        sizePolicy.setHeightForWidth(self.label_Error.sizePolicy().hasHeightForWidth())
-        self.label_Error.setSizePolicy(sizePolicy)
-        self.label_Error.setStyleSheet(u"background-color: black;\n"
-"font: 700 10pt \"Segoe UI\";\n"
-"color: rgb(255,0, 0);")
-
-        self.verticalLayout_16.addWidget(self.label_Error)
-
-        self.horizontalLayoutWidget_15 = QWidget(self.centralwidget)
-        self.horizontalLayoutWidget_15.setObjectName(u"horizontalLayoutWidget_15")
-        self.horizontalLayoutWidget_15.setGeometry(QRect(400, 930, 381, 150))
-        self.horizontalLayout_11 = QHBoxLayout(self.horizontalLayoutWidget_15)
-        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
-        self.horizontalLayout_11.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_Channel = QPushButton(self.horizontalLayoutWidget_15)
-        self.pushButton_Channel.setObjectName(u"pushButton_Channel")
-        self.pushButton_Channel.setEnabled(True)
-        sizePolicy.setHeightForWidth(self.pushButton_Channel.sizePolicy().hasHeightForWidth())
-        self.pushButton_Channel.setSizePolicy(sizePolicy)
-        palette5 = QPalette()
-        palette5.setBrush(QPalette.Active, QPalette.WindowText, brush)
-        palette5.setBrush(QPalette.Active, QPalette.Button, brush1)
-        palette5.setBrush(QPalette.Active, QPalette.Text, brush)
-        palette5.setBrush(QPalette.Active, QPalette.ButtonText, brush)
-        palette5.setBrush(QPalette.Active, QPalette.Base, brush1)
-        palette5.setBrush(QPalette.Active, QPalette.Window, brush1)
-        brush17 = QBrush(QColor(255, 255, 255, 128))
-        brush17.setStyle(Qt.NoBrush)
-        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette5.setBrush(QPalette.Active, QPalette.PlaceholderText, brush17)
-        # endif
-        palette5.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
-        palette5.setBrush(QPalette.Inactive, QPalette.Button, brush1)
-        palette5.setBrush(QPalette.Inactive, QPalette.Text, brush)
-        palette5.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
-        palette5.setBrush(QPalette.Inactive, QPalette.Base, brush1)
-        palette5.setBrush(QPalette.Inactive, QPalette.Window, brush1)
-        brush18 = QBrush(QColor(255, 255, 255, 128))
-        brush18.setStyle(Qt.NoBrush)
-        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette5.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush18)
-        # endif
-        palette5.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
-        palette5.setBrush(QPalette.Disabled, QPalette.Button, brush1)
-        palette5.setBrush(QPalette.Disabled, QPalette.Text, brush)
-        palette5.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
-        palette5.setBrush(QPalette.Disabled, QPalette.Base, brush1)
-        palette5.setBrush(QPalette.Disabled, QPalette.Window, brush1)
-        brush19 = QBrush(QColor(255, 255, 255, 128))
-        brush19.setStyle(Qt.NoBrush)
-        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette5.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush19)
-        # endif
-        self.pushButton_Channel.setPalette(palette5)
-        self.pushButton_Channel.setStyleSheet(u"             QPushButton {\n"
-                                              "                 background-color: black;\n"
-                                              "                 border: none;\n"
-                                              "                 color: white;\n"
-                                              "                 font: 700 16pt \\\"Segoe UI\\\";\n"
-                                              "                 border-image: url(buttons_grey.png);\n"
-                                              "             }\n"
-                                              "             QPushButton:hover {\n"
-                                              "                 background-color: #333;\n"
-                                              "             }\n"
-                                              "             QPushButton:pressed {\n"
-                                              "                border-image: url(buttons_grey_p.png);\n"
-                                              "             }")
-
-        self.horizontalLayout_11.addWidget(self.pushButton_Channel)
-
         DataLogger_Profile.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(DataLogger_Profile)
@@ -895,6 +896,17 @@ class Ui_DataLogger_Profile(object):
         self.label_CurrentMag.setText(QCoreApplication.translate("DataLogger_Profile", u"MAG\n"
 "Value", None))
         self.label_MinMag.setText(QCoreApplication.translate("DataLogger_Profile", u"MIN", None))
+        self.label_Error.setText("")
+        self.pushButton_ProfileScale.setText(QCoreApplication.translate("DataLogger_Profile", u"Profile H\n"
+"Scale 10", None))
+        self.pushButton_ProfileView.setText(QCoreApplication.translate("DataLogger_Profile", u"MAG\n"
+"View", None))
+        self.pushButton_Exit.setText(QCoreApplication.translate("DataLogger_Profile", u"Exit", None))
+        self.label_Status.setText("")
+        self.pushButton_Start_Profile.setText(QCoreApplication.translate("DataLogger_Profile", u"Start\n"
+"Profile", None))
+        self.pushButton_Stop_Profile.setText(QCoreApplication.translate("DataLogger_Profile", u"Stop\n"
+"Profile", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_ProfileMag), QCoreApplication.translate("DataLogger_Profile", u"Profile Mag", None))
         self.label_Channel_Y.setText(QCoreApplication.translate("DataLogger_Profile", u"Ch Y", None))
         self.label_Channel_X.setText(QCoreApplication.translate("DataLogger_Profile", u"Ch X", None))
@@ -919,16 +931,5 @@ class Ui_DataLogger_Profile(object):
 "Value", None))
         self.label_MaxADHAT.setText(QCoreApplication.translate("DataLogger_Profile", u"MAX", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_Profile_ADHAT), QCoreApplication.translate("DataLogger_Profile", u"Profile ADHAT", None))
-        self.pushButton_ProfileView.setText(QCoreApplication.translate("DataLogger_Profile", u"MAG\n"
-"View", None))
-        self.pushButton_Exit.setText(QCoreApplication.translate("DataLogger_Profile", u"Exit", None))
-        self.pushButton_Start_Profile.setText(QCoreApplication.translate("DataLogger_Profile", u"Start\n"
-"Profile", None))
-        self.pushButton_Stop_Profile.setText(QCoreApplication.translate("DataLogger_Profile", u"Stop\n"
-"Profile", None))
-        self.pushButton_ProfileScale.setText(QCoreApplication.translate("DataLogger_Profile", u"Profile H\n"
-"Scale 10", None))
-        self.label_Status.setText("")
-        self.label_Error.setText("")
     # retranslateUi
 
