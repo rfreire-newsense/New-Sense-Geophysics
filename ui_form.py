@@ -23,7 +23,7 @@ class Ui_DataLogger_Profile(object):
     def setupUi(self, DataLogger_Profile):
         if not DataLogger_Profile.objectName():
             DataLogger_Profile.setObjectName(u"DataLogger_Profile")
-        DataLogger_Profile.resize(800, 429)
+        DataLogger_Profile.resize(800, 463)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -35,7 +35,7 @@ class Ui_DataLogger_Profile(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.horizontalLayoutWidget_7 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_7.setObjectName(u"horizontalLayoutWidget_7")
-        self.horizontalLayoutWidget_7.setGeometry(QRect(540, 300, 251, 131))
+        self.horizontalLayoutWidget_7.setGeometry(QRect(540, 310, 251, 151))
         self.verticalLayout_7 = QVBoxLayout(self.horizontalLayoutWidget_7)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
         self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -159,7 +159,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_2 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_2.setObjectName(u"verticalLayoutWidget_2")
-        self.verticalLayoutWidget_2.setGeometry(QRect(0, 300, 181, 131))
+        self.verticalLayoutWidget_2.setGeometry(QRect(0, 300, 181, 161))
         self.verticalLayout_3 = QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -276,7 +276,7 @@ class Ui_DataLogger_Profile(object):
 
         self.horizontalLayoutWidget_11 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_11.setObjectName(u"horizontalLayoutWidget_11")
-        self.horizontalLayoutWidget_11.setGeometry(QRect(180, 300, 161, 131))
+        self.horizontalLayoutWidget_11.setGeometry(QRect(180, 300, 161, 161))
         self.horizontalLayout_10 = QHBoxLayout(self.horizontalLayoutWidget_11)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
@@ -337,7 +337,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_15 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_15.setObjectName(u"verticalLayoutWidget_15")
-        self.verticalLayoutWidget_15.setGeometry(QRect(350, 300, 171, 51))
+        self.verticalLayoutWidget_15.setGeometry(QRect(350, 300, 171, 71))
         self.verticalLayout_15 = QVBoxLayout(self.verticalLayoutWidget_15)
         self.verticalLayout_15.setObjectName(u"verticalLayout_15")
         self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
@@ -351,7 +351,7 @@ class Ui_DataLogger_Profile(object):
 
         self.verticalLayoutWidget_23 = QWidget(self.centralwidget)
         self.verticalLayoutWidget_23.setObjectName(u"verticalLayoutWidget_23")
-        self.verticalLayoutWidget_23.setGeometry(QRect(350, 360, 171, 71))
+        self.verticalLayoutWidget_23.setGeometry(QRect(350, 390, 171, 71))
         self.verticalLayout_16 = QVBoxLayout(self.verticalLayoutWidget_23)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
         self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
@@ -364,6 +364,68 @@ class Ui_DataLogger_Profile(object):
 "color: rgb(255,0, 0);")
 
         self.verticalLayout_16.addWidget(self.label_Error)
+
+        self.horizontalLayoutWidget_15 = QWidget(self.centralwidget)
+        self.horizontalLayoutWidget_15.setObjectName(u"horizontalLayoutWidget_15")
+        self.horizontalLayoutWidget_15.setGeometry(QRect(400, 930, 381, 150))
+        self.horizontalLayout_11 = QHBoxLayout(self.horizontalLayoutWidget_15)
+        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.horizontalLayout_11.setContentsMargins(0, 0, 0, 0)
+        self.pushButton_Channel = QPushButton(self.horizontalLayoutWidget_15)
+        self.pushButton_Channel.setObjectName(u"pushButton_Channel")
+        self.pushButton_Channel.setEnabled(True)
+        sizePolicy.setHeightForWidth(self.pushButton_Channel.sizePolicy().hasHeightForWidth())
+        self.pushButton_Channel.setSizePolicy(sizePolicy)
+        palette5 = QPalette()
+        palette5.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette5.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette5.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette5.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        palette5.setBrush(QPalette.Active, QPalette.Base, brush1)
+        palette5.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush17 = QBrush(QColor(255, 255, 255, 128))
+        brush17.setStyle(Qt.NoBrush)
+        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Active, QPalette.PlaceholderText, brush17)
+        # endif
+        palette5.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette5.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette5.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette5.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        palette5.setBrush(QPalette.Inactive, QPalette.Base, brush1)
+        palette5.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush18 = QBrush(QColor(255, 255, 255, 128))
+        brush18.setStyle(Qt.NoBrush)
+        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush18)
+        # endif
+        palette5.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette5.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette5.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette5.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
+        palette5.setBrush(QPalette.Disabled, QPalette.Base, brush1)
+        palette5.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        brush19 = QBrush(QColor(255, 255, 255, 128))
+        brush19.setStyle(Qt.NoBrush)
+        # if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette5.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush19)
+        # endif
+        self.pushButton_Channel.setPalette(palette5)
+        self.pushButton_Channel.setStyleSheet(u"             QPushButton {\n"
+                                              "                 background-color: black;\n"
+                                              "                 border: none;\n"
+                                              "                 color: white;\n"
+                                              "                 font: 700 16pt \\\"Segoe UI\\\";\n"
+                                              "                 border-image: url(buttons_grey.png);\n"
+                                              "             }\n"
+                                              "             QPushButton:hover {\n"
+                                              "                 background-color: #333;\n"
+                                              "             }\n"
+                                              "             QPushButton:pressed {\n"
+                                              "                border-image: url(buttons_grey_p.png);\n"
+                                              "             }")
+
+        self.horizontalLayout_11.addWidget(self.pushButton_Channel)
 
         self.horizontalLayoutWidget_15 = QWidget(self.centralwidget)
         self.horizontalLayoutWidget_15.setObjectName(u"horizontalLayoutWidget_15")
